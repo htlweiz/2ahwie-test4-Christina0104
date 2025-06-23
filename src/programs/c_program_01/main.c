@@ -2,24 +2,26 @@
 
 #include <test_c_lib.h>
 
-void init(int array[], int length, int value)
+int find_max_of_three(int a, int b )
 {
-  for (int i = 0; i<length; i++)
-  {
-    array[i] = value;
-  }
+  if ( a > b)
+  return a;
+  else
+  return b;
 }
 
-
 int main(int argc, char **argv)
+{
+int zahl1 = 0, zahl2 = 0, max = 0;
  {
-  
-  //function"init(int array[], int length, int value)"
-  //initialisiere ein "array" der Länge 5 mit dem Wert 7
-  int array[5];
-
-  init(array, 5, 7)
-
-
-  return 0;
+   printf("Geben Sie die 1. Zahl ein:");
+   scanf("%d" , &zahl1);
+   printf("Geben Sie die 2. Zahl ein:");
+   scanf("%d" , &zahl2);
+   max = find_max_of_three(zahl1 , zahl2);
+   printf("Das Maximum von %d und %d ist %d\n:" ,  zahl1 , zahl2 , max );
  }
+ 
+  
+ 
+}

@@ -12,12 +12,8 @@ int int_even_odd(int a)
 
 int main(int argc, char **argv)
 {
-  printf("This program was called with %d arguments.\n", argc);
-  printf("Hello World!\n");
-
   //EXERCISE 1
   int number = 0, result = 0;
-  result = int_even_odd(number);
   printf("Testzahl : ");
   scanf("%d", &number);
   result = int_even_odd(number);
@@ -29,6 +25,7 @@ int main(int argc, char **argv)
     printf("Die Testzahl ist gerade.\n");
 
 //EXERCISE 2
+
 int numbers[10] = {3, 1, 7, 4, 9, 1, 5, 10, -2, 2} ;
 for( int i = 0; i < 10; i++)
 {
@@ -55,8 +52,6 @@ count_odd = 5 - count_even;
 printf("Anzahl der geraden Zahlen: %d\n" , count_even);
 printf("Anzahl der ungeraden Zahlen: %d\n" , count_odd);
 printf("Summe der Zahlen: %d\n" , sum);
-
-
 
   /*
 //-----Exercise 2-----
